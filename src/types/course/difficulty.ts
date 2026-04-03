@@ -1,0 +1,1 @@
+export type CourseDifficulty = "Beginner" | "Intermediate" | "Advanced";

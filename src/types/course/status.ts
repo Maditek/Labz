@@ -1,0 +1,1 @@
+export type CourseStatus = "New" | "Published" | "Maintenance" | "Updated" | "Coming Soon";
