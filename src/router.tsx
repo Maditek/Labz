@@ -4,6 +4,7 @@ import { CatalogPage } from "./pages/CatalogPage"
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { Layout } from "./layouts/Layout";
 import { CoursePage } from "./pages/CoursePage";
+import { mockCourses } from "./data/MockCourses";
 
 export const router = createBrowserRouter([
     {
@@ -11,7 +12,7 @@ export const router = createBrowserRouter([
         element: <Layout />,
         children: [
             { index: true, element: <LandingPage /> },
-            { path: "catalog", element: <CatalogPage /> },
+            { path: "catalog", element: <CatalogPage courses = {mockCourses}/> },
             { path: "courses/:courseId", element: <CoursePage/>},
             { path: "*", element: <NotFoundPage /> },
         ],
