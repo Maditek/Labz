@@ -3,6 +3,7 @@ import { LandingPage } from "./pages/LandingPage"
 import { CatalogPage } from "./pages/CatalogPage"
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { Layout } from "./layouts/Layout";
+import { CoursePage } from "./pages/CoursePage";
 
 export const router = createBrowserRouter([
     {
@@ -11,6 +12,7 @@ export const router = createBrowserRouter([
         children: [
             { index: true, element: <LandingPage /> },
             { path: "catalog", element: <CatalogPage /> },
+            { path: "courses/:courseId", element: <CoursePage/>},
             { path: "*", element: <NotFoundPage /> },
         ],
     }
