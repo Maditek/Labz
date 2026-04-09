@@ -3,7 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 export const Layout = () => {
   return (
     <>
-     <nav className="border-b bg-white">
+     <nav className="border-b bg-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="font-bold text-lg">
             <NavLink to="/">Hamisha Labs</NavLink>
